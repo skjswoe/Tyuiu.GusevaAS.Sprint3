@@ -32,7 +32,7 @@ namespace Tyuiu.GusevaAS.Sprint3.Task6.V17
             int result = ds.GetSumTheDivisors(startValue, stopValue);
             Console.WriteLine("Количество делителей = " + result);
 
-            Console.ReadLine();s
+            Console.ReadLine();
         }
     }
 }
