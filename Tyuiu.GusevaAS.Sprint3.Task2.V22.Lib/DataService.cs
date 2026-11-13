@@ -16,6 +16,7 @@ namespace Tyuiu.GusevaAS.Sprint3.Task2.V22.Lib
                 i++;
             } while (i <= stopValue);
 
+
             return Math.Round(p, 3);
         }
     }
