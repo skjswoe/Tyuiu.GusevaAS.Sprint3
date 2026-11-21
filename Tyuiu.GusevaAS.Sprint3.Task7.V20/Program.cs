@@ -24,20 +24,21 @@ namespace Tyuiu.GusevaAS.Sprint3.Task7.V20
             int startValue = -5;
             int stopValue = 5;
 
-            Console.WriteLine($"Диапазон: от {startValue} до {stopValue}");
-
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
             double[] result = ds.GetMassFunction(startValue, stopValue);
 
-            Console.WriteLine("x\tF(x)");
+            Console.WriteLine("-----------------");
+            Console.WriteLine("|   x   |  F(x) |");
+            Console.WriteLine("-----------------");
             for (int i = 0; i < result.Length; i++)
             {
                 int x = startValue + i;
-                Console.WriteLine($"{x}\t{result[i]}");
+                Console.WriteLine($"| {x,5} | {result[i],5:F2} |");
             }
+            Console.WriteLine("-----------------");
 
             Console.ReadLine();
         }
